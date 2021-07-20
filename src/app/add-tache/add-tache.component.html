@@ -1,0 +1,17 @@
+<div>
+  <div class="submit-form">
+    <div>
+      <div class="form-group">
+        <label for="designation">Designation</label>
+        <input
+          class="form-control"
+          #designation
+          required
+          name="designation"
+        />
+      </div>
+      <button (click)="saveTache(designation.value)" class="btn btn-success">Submit</button>
+    </div>
+
+  </div>
+</div>

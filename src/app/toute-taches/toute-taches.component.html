@@ -1,0 +1,8 @@
+<div class="row">
+  <app-tache class="col-3" *ngFor="let tache of taches;"
+      [id]="tache.Id"
+      [designation]="tache.Designation"
+      (deleteTache)="removeTache($event)"
+      (modifierTache)="updTache($event)"
+  ></app-tache>
+</div>
